@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.452
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Generator.Core", "src\EntityFrameworkCore.Generator.Core\EntityFrameworkCore.Generator.Core.csproj", "{2FAD146E-69AA-4068-91D6-81632A9D3E88}"
 EndProject
@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3E4208F0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Generator.Core.Tests", "test\EntityFrameworkCore.Generator.Core.Tests\EntityFrameworkCore.Generator.Core.Tests.csproj", "{05E64176-6025-43C6-9F0F-2DD5E52EB325}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Generator", "src\EntityFrameworkCore.Generator\EntityFrameworkCore.Generator.csproj", "{C36914A2-9E52-4946-AD0E-8EF1EA52F38C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GT.EntityFrameworkCore.Generator", "src\EntityFrameworkCore.Generator\GT.EntityFrameworkCore.Generator.csproj", "{C36914A2-9E52-4946-AD0E-8EF1EA52F38C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{6A18343D-8DEC-4FCC-861E-FA8312E25153}"
 	ProjectSection(SolutionItems) = preProject

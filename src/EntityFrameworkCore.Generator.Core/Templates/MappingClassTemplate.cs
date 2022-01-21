@@ -219,6 +219,12 @@ namespace EntityFrameworkCore.Generator.Templates
                 CodeBuilder.Append("\")");
             }
 
+            if (keys.Count == 1 && !keys.First().IsRequired)
+            {
+                CodeBuilder.AppendLine();
+                CodeBuilder.Append(".IsRequired(required: false)");
+            }
+
             CodeBuilder.DecrementIndent();
 
             CodeBuilder.AppendLine(";");

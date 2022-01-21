@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\build\common.props" />
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ToolCommandName>efg</ToolCommandName>
+		<PackAsTool>true</PackAsTool>
+		<PackageOutputPath>./nupkg</PackageOutputPath>
+		<Version>2.0.0.2-alpha</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>2.0.0.2</AssemblyVersion>
+		<FileVersion>2.0.0.2</FileVersion>
+		<Description>.NET Core command-line (CLI) tool to generate Entity Framework Core source files. Alpha</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1591,EF1001</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1591,EF1001</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.1.0" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="4.1.2" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EntityFrameworkCore.Generator.Core\EntityFrameworkCore.Generator.Core.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -2,7 +2,7 @@
   <Import Project="..\..\build\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>EntityFrameworkCore.Generator</RootNamespace>
   </PropertyGroup>
 
